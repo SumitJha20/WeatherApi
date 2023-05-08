@@ -7,7 +7,7 @@ com.fasterxml.jackson.core:jackson-databind:2.13.0: for JSON parsing and seriali
 org.springframework:spring-web:5.3.8: for building the RESTful API
 
 # Approaches
-This is a Java Spring Boot @RestController that handles a GET request to the "/weather" endpoint with a required query parameter date.
+This is a Java Spring Boot @RestController that handles a GET request to the HEX"/weather" endpoint with a required query parameter date.
 The API URL is constructed with the given latitude, longitude, timezone, and date parameters.
 A HttpURLConnection is opened to the constructed URL and a GET request is made.
 If the response code is HTTP_OK, the response is read and stored in a StringBuilder.
