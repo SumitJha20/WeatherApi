@@ -25,9 +25,9 @@ If no temperature data is available, the code returns default values. If an HTTP
 Request
 The API endpoint accepts a date parameter in the format yyyy-mm-dd. The parameter is required.
 
-## GET /weather?date=
+### GET /weather?date=
 
 # Response
 The API returns a JSON object containing the temperature data and sunrise/sunset times for the given date.
-## {"date": "yyyy-mm-dd","temperature": 
+### {"date": "yyyy-mm-dd","temperature": 
 {"time": [],"temperature_2m": []},"sunrise": "","sunset": ""}
