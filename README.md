@@ -16,6 +16,7 @@ If the JSON tree has an "hourly" object, the temperature data is extracted from 
 If the JSON tree has a "daily" object, the sunrise and sunset data are extracted and stored in the WeatherData object.
 The WeatherData object is populated with the TemperatureData, date, sunrise, and sunset data.
 If temperature data is available, the WeatherData object is returned. Otherwise, default values are set for the temperature data and the WeatherData object is returned.
+
 The WeatherData and TemperatureData classes are POJOs used to represent the JSON data returned from the API. The WeatherData class has date, sunrise, and sunset fields, and a TemperatureData field. The TemperatureData class has time and temperature_2m fields. The JSON data is parsed into these objects for easier handling in the Java code.
 
 If no temperature data is available, the code returns default values. If an HTTP error code is received, the code throws a RuntimeException.
